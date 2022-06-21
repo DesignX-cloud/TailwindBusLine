@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+
+.writing-vertical{
+    writing-mode: vertical-rl
+}
+
+}
+
+@layer components {
+    .nav {
+      @apply bg-white relative flex justify-between;
+    }
+
+    .footer{
+        @apply bg-neutral-700 text-center text-white text-xs w-full
+    }
+  }
