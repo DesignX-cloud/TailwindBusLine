@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       inset: {
-        '1/6': '15%',
+        '1/9': '11.111%',
       }
     },
     screens: {
@@ -47,6 +47,7 @@ module.exports = {
       widest: '.25em',
       x: '1em',
     }
+   
   },
   plugins: [],
 }

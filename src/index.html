@@ -1,33 +1,54 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline text-indigo-300">
-    Hello world!
-  </h1>
 
-  <p class="text-lg 2xl:text-teal-500 xl:text-orange-600 md:text-pink-500">測試RWD</p>
-  <button class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
-    Primary
-</button>
+<body > 
+  <div class="h-screen flex flex-col">
 
-<div class="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-  <div class="flex items-center justify-center w-12 bg-emerald-500">
-      <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
-      </svg>
-  </div>
-  
-  <div class="px-4 py-2 -mx-3">
-      <div class="mx-3">
-          <span class="font-semibold text-emerald-500 dark:text-emerald-400">Success</span>
-          <p class="text-sm text-gray-600 dark:text-gray-200">Your account was registered!</p>
+
+  <div class="px-10 py-5 ">
+    <nav class="nav">
+      <a class="flex items-center ">
+        <img class="" src="../img/Group 8.png" style="width:49px;height:49px">
+        <div class="flex flex-col px-2">
+          <div class="font-bold text-base">台灣公車 e 點通</div>
+          <div class="font-light text-xs">Taiwan Bus+</div>
+        </div>
+      </a>
+      <div class=" grid content-center grid-cols-4 gap-4 ">
+        <a href="" class="text-base mx-3">附近站牌</a>
+        <a href="" class="text-base mx-3">路線規劃</a>
+        <a href="" class="text-base mx-3">站點查詢</a>
+        <a href="" class="text-base mx-3">我的收藏</a>
+
       </div>
+      <div class=" grid content-center grid-cols-3 gap-4 ">
+        <i class="text-base fa-solid fa-earth-americas mx-1"></i>
+        <span class="text-base mx-1">中</span>
+        <span class="text-base mx-1">英</span>
+      </div>
+    </nav>
   </div>
+  <div class="relative grow">
+    <img src="../img/bg.png" class="block w-full">
+    <div class="banner-caption">
+      <p class="writing-vertical text-sm font-light block tracking-wide">Taiwan bus +</p>
+      <p class="writing-vertical font-normal text-2xl tracking-x">床前明月光</p>
+      <p class="writing-vertical font-bold text-2xl tracking-x mt-12">時刻查詢系統</p>
+    </div>
+  </div>
+  <div class="bg-neutral-100 ">
+
+  </div>
+  <footer class="footer">
+    <p class="py-5">Copyright © 2021 台灣公車 e 點通 All rights reserved.</p>
+  </footer>
 </div>
 </body>
+
 </html>

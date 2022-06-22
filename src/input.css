@@ -18,4 +18,8 @@
     .footer{
         @apply bg-neutral-700 text-center text-white text-xs w-full
     }
+
+    .banner-caption{
+       @apply absolute text-white left-1/9 top-1/4 flex
+    }
   }
