@@ -12,7 +12,13 @@ module.exports = {
     extend: {
       inset: {
         '1/9': '11.111%',
-      }
+      },
+      colors: {
+        hepatic: '#D08181',
+        paleBlue:'#5E9BAE',
+        nileBlue:'#52797C',
+      },
+     
     },
     screens: {
       '2xl': { 'max': '1439px' },
@@ -46,8 +52,10 @@ module.exports = {
       widest: '.1em',
       widest: '.25em',
       x: '1em',
-    }
-   
+    },
+
+
+
   },
   plugins: [],
 }
