@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台中市公車路線圖</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>台灣公車 e 點通</title>
+</head>
+
+<body>
+    <div class="h-screen flex flex-col">
+        <div class="px-10 py-5 ">
+            <nav class="nav">
+                <a class="flex items-center ">
+                    <img class="" src="../img/Group 8.png" style="width:49px;height:49px">
+                    <div class="flex flex-col px-2">
+                        <div class="font-bold text-base">台灣公車 e 點通</div>
+                        <div class="font-light text-xs">Taiwan Bus+</div>
+                    </div>
+                </a>
+                <div class=" grid content-center grid-cols-4 gap-4 ">
+                    <a href="" class="text-base mx-3 hover:text-sky-700 hover:font-semibold ">附近站牌</a>
+                    <a href="" class="text-base mx-3 hover:text-sky-700 hover:font-semibold">路線規劃</a>
+                    <a href="" class="text-base mx-3 hover:text-sky-700 hover:font-semibold">站點查詢</a>
+                    <a href="" class="text-base mx-3 hover:text-sky-700 hover:font-semibold">我的收藏</a>
+
+                </div>
+                <div class=" grid content-center grid-cols-3 gap-4 ">
+                    <a href=""
+                        class="text-base fa-solid fa-earth-americas mx-1 hover:text-sky-700 hover:font-semibold"></a>
+                    <a href="" class="text-base text-orange-500 mx-1 hover:text-sky-700 hover:font-semibold ">中</a>
+                    <a href="" class="text-base mx-1 hover:text-sky-700 hover:font-semibold">英</a>
+                </div>
+            </nav>
+        </div>
+        <nav class="py-2 bg-neutral-100 flex justify-between">
+            <ol class="flex flex-wrap ml-10">
+                <li class="breadcrumb-item">首頁</li>
+                <li class="breadcrumb-item">台中市</li>
+            </ol>
+            <div class="mr-10 flex items-center">
+                <i class="fa-solid fa-circle-exclamation pr-2"></i>
+                <p>時刻表</p>
+            </div>
+
+        </nav>
+        <div class="w-full flex">
+            <div class="flex flex-col w-4/12 bg-white drop-shadow-xl p-5">
+                <div class=" input-group">
+                    <input type="text" value="" class=" input " placeholder="專用道" />
+
+                    <span data-clear-input
+                        class="text-gray-500 hover:text-sky-700 active:text-orange-500">&times;</span>
+                </div>
+
+                <ul class=" divide-y px-4 pt-5 list-none">
+                    <li class="leading-10">
+                        <div class="flex justify-between items-center">
+                            <p class="font-bold">30 延</p>
+                            <i id="love" class="fa-regular fa-heart text-gray-500" onclick="collect()"></i>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-500">台中區監理所 - 台中火車站</p>
+                            <p class="text-gray-500">台中</p>
+                            
+                        </div>
+                    </li>
+                    <li class="leading-10">
+                        <div class="flex justify-between items-center">
+                            <p class="font-bold">300</p>
+                            <i id="train" class="fa-regular fa-heart text-gray-500" onclick="collect()"></i>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-500">靜宜大學 - 台中火車站</p>
+                            <p class="text-gray-500">台中</p>
+                            
+                        </div>
+                    </li>
+                    <li class="leading-10">
+                        <li class="leading-10">
+                            <div class="flex justify-between items-center">
+                                <p class="font-bold">301</p>
+                                <i id="love" class="fa-regular fa-heart text-gray-500" onclick="collect()"></i>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-gray-500">靜宜大學 - 新民高中</p>
+                                <p class="text-gray-500">台中</p>
+                                
+                            </div>
+                        </li>
+                    </li>
+                    <li class="leading-10">
+                        <li class="leading-10">
+                            <div class="flex justify-between items-center">
+                                <p class="font-bold">302</p>
+                                <i id="love" class="fa-regular fa-heart text-gray-500" onclick="collect()"></i>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-gray-500">台中國際機場 - 台中公園</p>
+                                <p class="text-gray-500">台中</p>
+                                
+                            </div>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex w-8/12">
+                opyright © 20
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="py-5">Copyright © 2021 台灣公車 e 點通 All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+<script>
+    function collect() {
+        const element = document.getElementById('love');
+
+        element.classList.toggle('fa-solid');
+        element.classList.toggle('text-gray-500');
+        element.classList.toggle('text-red-400');
+    }
+
+
+</script>
+
+</html>
