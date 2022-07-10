@@ -34,7 +34,7 @@ html:not([dir=rtl]) .breadcrumb-item+.breadcrumb-item::before {
    
     font-size: 1.4em;
     padding-top: 0.8rem;
-    padding-right:0.6rem;
+    padding-right:2rem;
     line-height: 1em;
     cursor: pointer;
   }
@@ -68,4 +68,10 @@ html:not([dir=rtl]) .breadcrumb-item+.breadcrumb-item::before {
       invalid:border-pink-500 invalid:text-pink-600
       focus:invalid:border-pink-500 focus:invalid:ring-pink-500
     }
+
+    .keyboard{
+      @apply  h-10 rounded-lg flex items-center
+    }
+
+  
   }
